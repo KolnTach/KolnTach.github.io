@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Montaj</title>
+    <link rel="stylesheet" href="CSS/stil.css">
+    <link rel="icon" type="image/x-icon" href="Imagini/logo/logo_inverted.png">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="Imagini/videoback.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+    <header>
+        <nav role="navigation">
+            <div class="left-container">
+                <div class="logo-container">
+                    <img src="Imagini/logo/logo_inverted.png" alt="Site Logo" class="logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Acasa</a></li>
+                    <li><a href="imagini.html">Imagini</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="hamburger" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="title-container">
+                <img src="Imagini/logo/text_inverted.png" alt="Site Title" class="title">
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <div class="contact-info">
+            <h2 class="contact-title">Date de contact</h2>
+            
+            <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-content">
+                    <h3>Adresă</h3>
+                    <p>Strada Valea Cascadelor 11d, București 077025</p>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-icon">📞</div>
+                <div class="info-content">
+                    <h3>Telefon</h3>
+                    <p><a href="tel:+40764681191">+40 764 681 191</a></p>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-icon">✉️</div>
+                <div class="info-content">
+                    <h3>Email</h3>
+                    <p><a href="mailto:contact@aimontaj.ro">contact@aimontaj.ro</a></p>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-icon">🕒</div>
+                <div class="info-content">
+                    <h3>Program</h3>
+                    <p>Luni-Vineri: 08:00 - 18:00<br>
+                    Sâmbătă: 09:00 - 14:00<br>
+                    Duminică: Închis</p>
+                </div>
+            </div>
+            
+            <div class="map-container">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d140.51999091519974!2d26.000962360157537!3d44.43057817464858!2m3!1f78.14345991561197!2f62.33164715844491!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x40b200f80affbd73%3A0x62035119b838dd57!2sPINUM%20VALEA%20CASCADELOR!5e1!3m2!1sen!2sro!4v1750418360928!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+        </div>
+        
+        <div class="contact-form">
+            <h2 class="contact-title">Trimiteți un mesaj</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Nume complet</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Adresă email</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Număr de telefon</label>
+                    <input type="tel" id="phone" name="phone" class="form-control">
+                </div>
+                
+                
+                <div class="form-group">
+                    <label for="message">Mesaj</label>
+                    <textarea id="message" name="message" class="form-control" required></textarea>
+                </div>
+                 <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                <button type="submit" class="submit-btn">Trimite mesaj</button>
+            </form>
+        </div>
+    </main>
+</footer>
+    <script src="JS/scripturi.js"></script>
+    </html>
